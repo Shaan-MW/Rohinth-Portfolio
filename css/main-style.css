@@ -34,6 +34,10 @@
 
 body{
     background-color: #0A192F;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
 }
 
 .header{
@@ -70,9 +74,11 @@ body{
 /*Hero Section Styling*/
 .hero-section{
     width: 100vw;
-    height: 595px;
+    height: 610px;
     padding: 0 100px 0 100px;
     display: flex;
+    border-bottom: 1px solid rgba(30, 144, 255,.2);
+
 }
 .hero-section .profile-photo{
     height: 100%;
@@ -82,7 +88,7 @@ body{
     align-items: center;
 }
 
-img{
+.hero-section img{
     width: 570px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 65px;
@@ -142,4 +148,173 @@ img{
 .hero-section .profile-info .profile-info-connnect-button #connect-linkedIn:hover{
     background-color: #1E90FF;
     color: white;
+}
+
+.body-section{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(30, 144, 255,.2);
+
+}
+
+.body-section .body-content{
+    background-color: rgba(255, 255, 255,.01);
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.body-section .body-content .about-me-section{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.body-section .body-content .about-me-section p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+.body-section .body-content .skills-of-rotti{
+    width: 45%;
+    height: 40%;
+}
+
+.body-section .body-content .skills-of-rotti ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-section .body-content .skills-of-rotti h1{
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.body-section .body-content .skills-of-rotti ul li{
+    padding: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    color: white;
+    background-color:#1E90FF;
+    margin: 5px;
+    transition:all .3s linear;
+    cursor: pointer;
+}
+
+.body-section .body-content .skills-of-rotti ul li:hover{
+    background-color: white;
+    color: #1E90FF;
+}
+
+
+/* footer section */
+
+.footer-section{
+    width:100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .footer-content{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(30, 144, 255,.2);
+}
+
+.footer-section .footer-content div{
+    height: 100%;
+    width: 30%;
+}
+
+.footer-section .footer-content .footer-about-me{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .footer-content .footer-about-me img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 85px;
+    transition: all .3s ease;
+}
+
+.footer-section .footer-content .footer-about-me img:hover{
+    transform: scale(1.15);
+}
+
+
+.footer-section .footer-content .footer-quick-links{
+    flex: 3;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section .footer-content .footer-quick-links h3{
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+.footer-section .footer-content .footer-quick-links li a{
+    color: rgba(255, 255, 255, 0.4);
+    transition: all .3s ease;
+}
+
+.footer-section .footer-content .footer-quick-links li a:hover{
+    color: #1E90FF;
+}
+
+.footer-section .footer-content .footer-quick-links li{
+    padding: 5px;
+}
+
+.footer-section .footer-content .footer-contact-links{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footer-section .footer-content .footer-contact-links h3{
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+.footer-section .footer-content .footer-contact-links li{
+    color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+
+.footer-section .footer-content .footer-contact-links a{
+    color: rgba(255, 255, 255, 0.4);  
+    transition: all .3s ease;
+}
+
+.footer-section .footer-content .footer-contact-links a:hover{
+    color: #1E90FF;
 }
