@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+
+.profile-name{
+    font-size: 36px;
+    font-weight: 500;
+    font-variant: small-caps;
+    color: #F4F6F8;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.profile-name:hover{
+        transform: scale(1.10);
+
+}
+
+.profile-name .logo-n{
+    color: #1E90FF;
+}
+
+.profile-name .logo-bar{
+    font-size: 40px;
+}
+
+body{
+    background-color: #0A192F;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(30, 144, 255,.2);
+    padding:0 100px 0 100px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 65px;
+}
+
+.header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .navbar .navbar-links a{
+    padding: 5px;
+    transition: all .3s ease;
+}
+
+.header .navbar .navbar-links a:hover{
+    color:#1E90FF;
+}
+
+.header .navbar{
+    width: 50%;
+}
+
+
+
+/*Hero Section Styling*/
+.hero-section{
+    width: 100vw;
+    height: 595px;
+    padding: 0 100px 0 100px;
+    display: flex;
+}
+.hero-section .profile-photo{
+    height: 100%;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 570px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 65px;
+    margin-top: 10px;
+    left: 20px;
+}
+.hero-section .profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hero-section .profile-info .hero-section-name{
+    font-size: 50px;
+    font-weight: 500;
+}
+.hero-section .profile-info .hero-section-name span{
+    font-size: 50px;
+    color:#1E90FF;
+    font-weight: 700;
+}
+.hero-section .profile-info .hero-description-location{
+    font-weight: 400;
+    font-size: 20px;
+}
+.hero-section .profile-info .hero-description-connect{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-section .profile-info .profile-info-connnect-button button{
+    background-color: #1E90FF;
+    border: 0;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero-section .profile-info .profile-info-connnect-button #view-resume{
+    transition: all .3s ease;
+    border: 2px solid #1E90FF;
+}
+
+.hero-section .profile-info .profile-info-connnect-button #view-resume:hover{
+    transform: scale(1.08);
+}
+
+.hero-section .profile-info .profile-info-connnect-button #connect-linkedIn{
+    background-color:#0A192F;
+    border: 2px solid #1E90FF;
+    transition: all .3s ease;
+    color: #1E90FF;
+
+}
+
+.hero-section .profile-info .profile-info-connnect-button #connect-linkedIn:hover{
+    background-color: #1E90FF;
+    color: white;
+}
